@@ -1,0 +1,12 @@
+KF uses linear system, consider the process as a random process
+and correct the prediction of the system by minimizing the
+distance from the hyperplane of the measurements (eg maximizing
+the gaussian distribution of xk+1 Pk+1).
+EKF linearize the system by using just one point as mean of
+the Gaussian, i.e.
+the previous estimate xk + f(..)
+and apply KF.
+UKF samples more than one point in an intelligent way (in such a
+way we don't need to much points), it maps those points by
+using f(..) and then compute again the mean and the covariance
+to approximate the trasformed gaussian.
