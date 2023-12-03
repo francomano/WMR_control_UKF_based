@@ -6,7 +6,7 @@ EKF linearize the system by using just one point as mean of
 the Gaussian, i.e.
 the previous estimate xk + f(..)
 and apply KF.
-UKF samples more than one point in an intelligent way (in such a
+UKF samples more than one point (in such a
 way we don't need to much points), it maps those points by
-using f(..) and then compute again the mean and the covariance
-to approximate the trasformed gaussian.
+using the non linear f(..) and then compute again the mean and the covariance
+to find the best approximation the transformed gaussian.
